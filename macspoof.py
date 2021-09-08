@@ -18,3 +18,5 @@ def Main():
     subprocess.call(["ifconfig", interface, "down"], shell=True)
     subprocess.call(["ifconfig", interface, "hw", "ether", random_mac], shell=True)
     subprocess.call(["ifconfig", interface, "up"], shell=True)
+
+Main()
