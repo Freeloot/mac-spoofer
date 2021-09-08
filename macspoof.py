@@ -3,7 +3,7 @@ import subprocess
 
 global interface
 global random_mac
-interface = 'eth0'
+interface = 'eth0' #or wlan0
 
 def Main():
 
@@ -15,8 +15,6 @@ def Main():
     print("-> Generated MAC: " + random_mac)
 
     print("[+] Changing MAC address for " + interface + " to " + random_mac)
-    subprocess.call(["ifconfig", interface, "down"])
-    subprocess.call(["ifconfig", interface, "hw", "ether", random_mac])
-    subprocess.call(["ifconfig", interface, "up"])
-
-Main()
+    subprocess.call(["ifconfig", interface, "down"], shell=True)
+    subprocess.call(["ifconfig", interface, "hw", "ether", random_mac], shell=True)
+    subprocess.call(["ifconfig", interface, "up"], shell=True)
