@@ -1,4 +1,4 @@
-# Random-MAC
+# MAC Spoofer
 A simple MAC-changing automation program for linux made in Python3
 
 1. ```git clone https://github.com/Freeloot/mac-spoofer```
