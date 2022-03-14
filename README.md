@@ -1,5 +1,6 @@
 # Random-MAC
-Automation program to generate a random mac address and assign it to the users computer, feel free to change the defualt interface.
+A simple MAC-changing automation program for linux made in Python3
 
 1. ```git clone https://github.com/Freeloot/Random-MAC/```
-2. ```python macspoof.py```
+2. ```cd mac-spoofer```
+3. ```python macspoof.py```
